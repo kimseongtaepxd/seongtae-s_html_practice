@@ -23,7 +23,7 @@ header > div {
   padding-right:80px
 }
 
-header span {
+header h2 {
   padding-left:40px;
 }
 
@@ -71,15 +71,15 @@ h2,p{
   height:60px;
 }
 
-.firstBtn > span{
+.firstBtn > h2{
   font-size : 24px;
 }
 
-.firstBtn span.moreInfo{
+.firstBtn h2.moreInfo{
   font-size : 24px;
 }
 
-.firstBtn span.registerNow {
+.firstBtn h2.registerNow {
   margin:0px 26px;
   width:260px;
   height:40px;
@@ -88,6 +88,12 @@ h2,p{
   border-radius: 50px;
   text-align: center;
   line-height:40px;
+}
+
+.bg {
+  width:600px;
+  background-image:url(../img/Illustration.png);
+  background-size: 90%;
 }
 
 h2 {
@@ -114,6 +120,7 @@ h2 {
 .second span {
   margin-left:15px;
 }
+
 .third {
   width:100%;
 }
@@ -241,12 +248,17 @@ h2 {
   font-size: 24px;
 }
 
+.fifthMenuBox{
+  width:600px;
+  
+}
+
 .fifthMenu {
   display:flex;
   padding-bottom:20px;
 }
 
-.fifthMenu span {
+.fifthMenu h2 {
   margin-right:20px;
   padding:15px 40px;
   border:#f7f7f7 3px solid;
@@ -254,7 +266,7 @@ h2 {
   font-size:14px;
 }
 
-.blue span {
+.blue h2 {
   background-color:#03acf2;
   color:#fff;
 }
@@ -312,8 +324,242 @@ h2 {
 
 .face {
   position:absolute;
-  width:110px;
-  height:110px;
+  width:100px;
+  height:100px;
   border-radius: 0px 50% 50% 50%;
   border: 1px solid #000;
+}
+
+.sixthNameAndJob {
+  margin-left :70px;
+}
+
+.Job {
+  font-size:20px;
+  color:#929292;
+}
+
+.ico {
+  width:24px;
+  height:24px;
+}
+
+hr {
+  margin-left : 30px;
+  margin-right : 30px;
+}
+
+.sixthCareer {
+  margin: 0px 30px;
+}
+
+.sixthCareer span {
+  margin: 0px 5px;
+  line-height:40px;
+}
+
+.sixthCareer h2 {
+  font-size : 20px;
+}
+
+.chatBtn {
+  color : #fff;
+  background-color : #4caf50;
+  border-radius: 30px;
+  margin-left: 30px;
+}
+
+.chatBtn > h2 {
+  margin : 0px 40px;
+}
+
+.seventh {
+  width:100%;
+  height: 712px;
+}
+
+.seventhTitle {
+  margin-left:140px;
+  font-size : 36px;
+}
+.seventhMaintext {
+  margin:50px 0px 50px 140px;
+  font-size : 24px;
+}
+
+.seventhItem {
+  width:300px;
+  height:300px;
+  margin:25px;
+}
+
+.sevnethcircle {
+  width:300px;
+  height:300px;
+  border-radius:0px 50% 50% 50%;
+  box-shadow: 0 17px 20px -18px rgba(0, 0, 0, 1);
+}
+
+.seventhItemBox {
+  width:250px;
+  height:250px;
+  margin:auto;
+}
+
+.stars {
+  margin:40px 0px;
+}
+
+.star img {
+  width:24px;
+  height:24px;
+}
+
+.seventhNameAndJob {
+  text-align: right;
+}
+
+.seventhJob {
+  font-size:12px;
+  color:#929292;
+}
+
+.seventhFace {
+  width:100px;
+  height:100px;
+  border-radius: 50% 50% 0px 50%;
+  border: 1px solid #000;
+}
+
+.circles {
+  width:100%;
+  max-width: 960px;
+  justify-content: center;
+  margin: 70px 0px;
+}
+
+.circle {
+  width:16px;
+  height:16px;
+  border-radius: 50%;
+  margin:5px;
+  background-color: #b3e5fc;
+  border:1px solid #b3e5fc;
+}
+
+.eighth {
+  width:100%;
+  max-width:1215px;
+  height:169px;
+  margin:0px auto;
+  background: linear-gradient( 135deg,#03acf2 , #bde3cb);
+  border-radius: 30px;
+}
+
+.eighthBox {
+  width:100%;
+  max-width:1115px;
+  height:85px;
+  padding:40px;
+  margin:0 auto;
+  justify-content: space-between;
+}
+
+.eighthMain {
+  color:#fff;
+  line-height: 40px;
+}
+
+.eighthBtn {
+  width:300px;
+  height:70px;
+  background-color: #fff;
+  font-size:12px;
+  color:#58c8f6;
+  border-radius: 35px;
+  text-align: center;
+  line-height:70px;
+}
+
+.eighthTitle {
+  font-size: 18px;
+}
+
+.eighthMaintext {
+  font-size: 12px;
+}
+
+.nineth {
+  width:1200px;
+  height:798px;
+  margin:100px auto;
+}
+.ninethTitle {
+  font-size:52px;
+}
+
+.ninethMaintext {
+  font-size:24px;
+  margin:40px 0px;
+}
+
+.ninethItemBox {
+  flex-wrap: wrap;
+}
+
+.ninethItem {
+  width:500px;
+  height:200px;
+  box-shadow: 0px 0px 20px -10px #000;
+  border-radius: 20px;
+  margin: 0px 80px 30px 0px;
+}
+
+#buildingImg1 {
+  width:160px;
+  height:160px;
+  margin:20px 10px;
+  background-image:url(../img/Rectangle1.png);
+  background-size:160px;
+  border-radius: 20px;
+}
+
+.font18 {
+  font-size : 16px;
+}
+
+.ninethBtn {
+  width:300px;
+  height:40px;
+  border-radius: 30px;
+  border:2px solid #5db761;
+}
+
+.ninethBtn h2 {
+  text-align: center;
+  color:#5db761;
+  font-size: 12px;
+  line-height:40px;
+}
+
+.ninethInformation {
+  margin:10px;
+}
+.ninethInformation div {
+  margin:10px 0px;
+}
+
+.ninethIco {
+  width:16px;
+  height:16px;
+}
+
+.ninethPinIco{
+  width:16px;
+  height:20px;
+}
+
+.spaceBetween {
+  display:flex;
+  justify-content: space-between;
 }
