@@ -6,6 +6,8 @@ h2,p{
   margin: 0px 0px;
 }
 
+/* header */
+
 header {
   width:100%;
 }
@@ -13,47 +15,79 @@ header {
 header > div {
   max-width:1280px;
   height:103px;
-  display:flex;
-  float:center;
   margin:0px auto;
-  align-items: center;
 }
 
 #Menu {
-  padding-right:80px
+  font-size:18px;
+  font-weight:700;
+  align-items: center;
 }
 
-header h2 {
-  padding-left:40px;
+.Medical {
+  margin:22px 33px;
 }
 
+#Menu div {
+  margin-right:50px;
+}
+
+#LOGIN {
+  font-size: 16px;
+  line-height: 40px;
+  margin:0px 8px;
+}
 #REGISTER {
   width:160px;
   height:40px;
   color:#fff;
   background-color: #4caf50;
   border-radius: 50px;
-  margin-left:40px;
+  font-size:16px;
+  text-align: center;
+  line-height: 40px;
+  margin:0px 35px;
+}
+
+.gear {
+  margin:0px 33px;
+}
+
+header > div > div {
+  align-items: center;
 }
 
 .flex{
   display:flex;
 }
 
+.bg {
+  position:absolute;
+  width:700px;
+  height:960px;
+  top:0px;
+  right:0px;
+  background-image:url(../img/Illustration.png);
+  background-repeat: no-repeat;
+  z-index:-1;
+}
+
+/*first (Lorem ipsum dolor amet) */
+
 .first{
   width:100%;
-  height:360px;
+  max-width:1280px;
+  margin:0px auto;
+  margin-top:100px;
 }
 
-.first > div {
+.first > div{
   max-width:620px;
-  margin-left:186px;
+  height:275px;
 }
-
 .firstTitle {
   vertical-align:bottom;
-  margin-top:100px;
-  font-size:36px;
+  font-size:32px;
 }
 
 h2,p{
@@ -61,14 +95,15 @@ h2,p{
 }
 
 .firstMaintext {
-  height:52px;
-  padding: 60px 0px;
+  height:97.5px;
+  padding: 30px 0px;
   font-size: 32px;
 }
 
 .firstBtn {
   display:flex;
-  height:60px;
+  height:56px;
+  align-items: center;
 }
 
 .firstBtn > h2{
@@ -77,6 +112,7 @@ h2,p{
 
 .firstBtn h2.moreInfo{
   font-size : 24px;
+  color:#408243;
 }
 
 .firstBtn h2.registerNow {
@@ -90,57 +126,59 @@ h2,p{
   line-height:40px;
 }
 
-.bg {
-  width:600px;
-  background-image:url(../img/Illustration.png);
-  background-size: 90%;
-}
 
-h2 {
-  margin:0px auto;
-}
 
+/*second(Buiness Solution)*/
 .second {
   width:100%;
-  vertical-align: center;
+  max-width: 1068px;
+  height:89px;
+  margin:110px auto;
 }
 
 .second > div {
   display: flex;
-  max-width: 1070px;
-  height:89px;
-  margin:120px auto;
   justify-content: center;
+  align-items: center;
 }
 
-.secondItem {
-  margin-left:56px;
+.second h2 {
+  font-size : 28px;
 }
 
-.second span {
-  margin-left:15px;
+.second p {
+  font-size : 18px;
 }
+
+.second img {
+  margin-left:10px;
+  margin-right:35px;
+}
+
+/*third(+1200 Doctors) */
 
 .third {
   width:100%;
+  max-width:1127px;
+  height : 210px;
+  padding : 40px 0px;
+  margin:0 auto;
 }
 
 .third > div {
-  display: flex;
-  max-width:1130px;
-  height : 218px;
-  padding : 40px 0px;
-  margin:0 auto;
   justify-content: center;
+  align-items: center;
 }
 
 .thirdImg {
-  width:170px;
-  text-align: center;
+  text-align: left;
+  margin-right:20px;
 }
 
 .thirdItem {
-  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin:15px;
 }
 
 .big {
@@ -339,7 +377,7 @@ h2 {
   color:#929292;
 }
 
-.ico {
+.sixthCareer span .ico {
   width:24px;
   height:24px;
 }
@@ -524,7 +562,8 @@ hr {
   border-radius: 20px;
 }
 
-.font18 {
+
+.ninethInformation h2:not(.HeadQuarter) {
   font-size : 16px;
 }
 
@@ -552,6 +591,7 @@ hr {
 .ninethIco {
   width:16px;
   height:16px;
+  margin-right:10px;
 }
 
 .ninethPinIco{
@@ -562,4 +602,83 @@ hr {
 .spaceBetween {
   display:flex;
   justify-content: space-between;
+}
+
+footer {
+  width:100%;
+  margin:100px 0px;
+}
+
+.footerBox {
+  max-width : 1173px;
+  height:187px;
+  margin:0px auto;
+}
+
+.footerBox h2:not(.blue) {
+  font-size:16px;
+}
+.footerInformation {
+  width:100%;
+  max-width:350px;
+}
+
+.footerMaintext {
+  margin:20px 0px;
+}
+
+.footerMenu div {
+  width: 180px;
+  height: 100%;
+}
+
+.footerMenu div h2 {
+  text-align: left;
+  line-height: 35px;
+}
+
+.blue {
+  font-size : 18px;
+  color : #03ACF2;
+}
+
+.footerSNS .flex {
+  margin:20px 0px;
+}
+.grayCircle {
+  width:36px;
+  height:36px;
+  background-color: #eae5e7;
+  border-radius:50%;
+  text-align: center;
+  line-height:36px;
+  margin:8px;
+}
+
+.grayCircle img {
+  margin-top : 10px;
+}
+
+.language {
+  width:200px;
+  height:40px;
+  background-color: #fff;
+  border:1px solid #85d7f9;
+  border-radius: 10px;
+  justify-content: left;
+  line-height: 40px;
+  text-align: left;
+}
+
+.language h2 {
+  margin:0px;
+  width:135px;
+}
+
+.earth {
+  margin:10px 15px
+}
+
+.arrow {
+  margin:15px;
 }
