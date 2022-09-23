@@ -1,35 +1,79 @@
-html,body{
-  width:100%;
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
-h2,p{
-  margin: 0px 0px;
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html,body{
+  width:100%;
 }
 
 /* header */
 
 header {
+  display: flex;
   width:100%;
-}
-
-header > div {
   max-width:1280px;
   height:103px;
   margin:0px auto;
 }
 
-#Menu {
-  font-size:18px;
-  font-weight:700;
-  align-items: center;
+header >div{
+  width:100%;
 }
 
 .Medical {
   margin:22px 33px;
 }
 
-#Menu div {
+.Menu {
+  font-size:18px;
+  font-weight:700;
+}
+
+.Menu > ul > li {
+  display: inline-block;
   margin-right:50px;
+  line-height:103px;
 }
 
 #LOGIN {
@@ -47,6 +91,10 @@ header > div {
   text-align: center;
   line-height: 40px;
   margin:0px 35px;
+}
+
+.line {
+  content:url(../img/Line.png);
 }
 
 .gear {
@@ -72,50 +120,54 @@ header > div > div {
   z-index:-1;
 }
 
-/*first (Lorem ipsum dolor amet) */
+/*Home (Lorem ipsum dolor amet) */
 
-.first{
+.Home{
   width:100%;
-  max-width:1280px;
+  max-width:1214px;
   margin:0px auto;
   margin-top:100px;
 }
 
-.first > div{
+.Home > div{
   max-width:620px;
   height:275px;
 }
-.firstTitle {
+.Home-title {
   vertical-align:bottom;
-  font-size:32px;
+  font-size:48px;
+  font-weight:700;
 }
 
 h2,p{
   margin: 0px 0px;
 }
 
-.firstMaintext {
+.Home-maintext {
   height:97.5px;
   padding: 30px 0px;
   font-size: 32px;
+  line-height:50px;
+  color:#757575;
 }
 
-.firstBtn {
+.Home-btn {
   display:flex;
   height:56px;
   align-items: center;
 }
 
-.firstBtn > h2{
+.Home-btn > h2{
   font-size : 24px;
 }
 
-.firstBtn h2.moreInfo{
+.more-info{
   font-size : 24px;
-  color:#408243;
+  font-weight:600;
+  color:#357a38;
 }
 
-.firstBtn h2.registerNow {
+.register-now {
   margin:0px 26px;
   width:260px;
   height:40px;
@@ -124,40 +176,46 @@ h2,p{
   border-radius: 50px;
   text-align: center;
   line-height:40px;
+  
 }
 
 
 
 /*second(Buiness Solution)*/
-.second {
+
+.Solution {
   width:100%;
   max-width: 1068px;
   height:89px;
   margin:110px auto;
-}
-
-.second > div {
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.second h2 {
+.Solution > div {
+  border-right:1px solid #e0e0e0;
+  padding-right:15px;
+}
+
+.Solution > div:last-child {
+  border-right:0px;
+  padding-right:0px;
+}
+
+.Solution h2 {
   font-size : 28px;
+  font-weight: 600;
+  height:43px;
 }
 
-.second p {
+.Solution p {
   font-size : 18px;
+  height:24px;
 }
 
-.second img {
-  margin-left:10px;
-  margin-right:35px;
-}
+/*Specification(+1200 Doctors) */
 
-/*third(+1200 Doctors) */
-
-.third {
+.Specification {
   width:100%;
   max-width:1127px;
   height : 210px;
@@ -165,17 +223,17 @@ h2,p{
   margin:0 auto;
 }
 
-.third > div {
+.Specification > div {
   justify-content: center;
   align-items: center;
 }
 
-.thirdImg {
+.Specification-img {
   text-align: left;
   margin-right:20px;
 }
 
-.thirdItem {
+.SpecificationItem {
   align-items: flex-end;
   justify-content: center;
   margin:15px;
@@ -183,6 +241,7 @@ h2,p{
 
 .big {
   font-size : 48px;
+  font-weight: 900;
 }
 
 .green {
@@ -193,52 +252,81 @@ h2,p{
   font-size:36px;
 }
 
-.thirdMaintext {
+.Specification-description {
   font-size:18px;
   text-align: center;
 }
 
-/* fourth(Clinic Facilities) */
+/* clinic-facilities(Clinic Facilities) */
 
-.fourth {
+.clinic-facilities {
   width:100%;
   max-width:1280px;
   height:780px;
   margin: 38px auto;
 }
 
-.fourthTop {
+.clinic-facilities-top {
   width:100%;
   height:250px;
   padding-top:120px;
 }
 
-.fourthTitle {
-  font-size:40px;
+.clinic-facilities-title {
+  font-size:52px;
+  font-weight:900;
 }
 
-.fourthMain {
+.clinic-facilities-description {
   width:100%;
-  display: flex;
-  padding:60px 0px;
+  padding:50px 0px;
+  font-size:24px;
 }
 
-.fourthItemMainBtn {
+.SEE-ALL > div {
+  font-size:28px;
+  font-weight: 600;
+  color:#055a9d;
+  margin-right:15px;
+  background-image : url(../img/clinic_img_1);
+  }
+
+.blue_arrow {
+  content:url(../img/blue_arrow.PNG);
+}
+
+.clinic-facilities-item-btn {
   margin-top:34px;
   width:100%;
   text-align: right;
 }
 
-.forthBottom {
+.clinic-facilities-bottom {
   display: flex;
   padding-bottom:60px;
 }
 
-.forthImg {
+.clinic-facilities-bg {
   width:430px;
+  height:365px;
+  background-image : url(../img/Clinic_Facilities_bg.png);
+  background-repeat: no-repeat;
 }
 
-.fourthItem {
+.arrow-box {
+  justify-content: center;
+}
+
+.arrow-box > div {
+  margin:0px 8px;
+}
+
+.left-arrow {
+  transform: scaleX(-1);
+
+}
+
+.clinic-facilities-item {
   width:260px;
   height:390px;
   margin-right:40px;
@@ -246,56 +334,77 @@ h2,p{
   border-radius: 15px;
 }
 
-.fourthItemImg {
+.clinic-facilities-item-img {
   width:260px;
-  height:160px;
+  height:175px;
   border-radius: 15px 15px 30px 0px;
+  background-image:url(../img/clinic_img_1.png)
 }
 
-.fourthTextBox {
-  margin:20px;
+.clinic-facilities-text-box {
+  width:210px;
+  height:125px;
+  margin:0px auto;
 }
 
-.fourthItemMainBtn {
+.clinic-facilities-item-title {
+  margin:20px 0px;
+  font-size:24px;
+}
+
+.clinic-facilities-item-maintext {
+  color:#7d7d7d;
+  font-size:16px;
+  font-weight:500;
+  line-height:25px;
+}
+
+.clinic-facilities-item-btn {
   width:144px;
-  border-radius: 15px 0px 15px 0px;
+  padding:9px 0px;
   color:#fff;
+  border-radius: 15px 0px 15px 0px;
   background-color:#4caf50;
+  text-align: center;
   font-size:18px;
   float: right;
 }
 
 /* fifth(Our Speciality) */
 
-.fifth {
+.our-speciality {
   width:100%;
   max-width:1208px;
   height:607px;
   margin:0px auto;
 }
 
-.fifthTitle {
+.our-speciality-title {
   margin-top:135px;
-  font-size:34.70px;
+  font-size:52px;
+  font-weight:700;
 }
 
-.fifthMaintext {
+.our-speciality-maintext {
   width: 595px;
+  height:115px;
   padding: 50px 0px;
   font-size: 24px;
+  font-weight: 500;
+  line-height:38px;
 }
 
-.fifthMenuBox{
-  width:600px;
-  
+.our-speciality-menu-box{
+  width:493px;
+  height:124px;
 }
 
-.fifthMenu {
+.our-speciality-menu {
   display:flex;
   padding-bottom:20px;
 }
 
-.fifthMenu h2 {
+.our-speciality-menu div {
   margin-right:20px;
   padding:5px 40px;
   border:#f7f7f7 3px solid;
@@ -303,36 +412,38 @@ h2,p{
   font-size:14px;
 }
 
-.blue h2 {
+.blue div {
   background-color:#03acf2;
   color:#fff;
 }
 
-.bg3 {
+.our-speciality-bg {
   width:579px;
   height:607px;
   background-image:url(../img/Illustration\ &\ Title.png);
 }
 
-/* sixth(Ask Doctos) */
-.sixth {
+/* ask-doctosth(Ask Doctos) */
+.ask-doctos {
   width:100%;
   max-width:1324px;
   height:649px;
   margin:130px auto;
 }
 
-.sixthTitle {
+.ask-doctos-title {
   width:100%;
   max-width:300px;
   font-size: 52px;
+  font-weight:900;
   margin-top:58px;
 }
 
-.sixMenuItem {
+.ask-doctos-menu-item {
   margin:35px 0px;
   padding-left:20px;
   font-size:24px;
+  font-weight:500;
   vertical-align:center;
 }
 
@@ -345,19 +456,19 @@ h2,p{
   line-height:40px;
 }
 
-.sixthItems {
+.ask-doctos-items {
   height:642px;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.sixthItem {
+.ask-doctos-item {
   position:relative;
   width:445px;
   height:200px;
 }
 
-.sixthItemBox {
+.ask-doctos-item-box {
   width:405px;
   height:156px;
   margin: 44px 0px 0px 40px;
@@ -374,8 +485,14 @@ h2,p{
   background-size:100px;
 }
 
-.sixthNameAndJob {
+.ask-doctos-name-and-job {
   margin-left :70px;
+}
+
+.Name {
+  font-size:24px;
+  font-weight:700;
+  padding:10px 0px;
 }
 
 .Job {
@@ -383,35 +500,36 @@ h2,p{
   color:#929292;
 }
 
-.sixthCareer .ico {
+.ask-doctos-career .ico {
   width:24px;
   height:24px;
   margin:0px 10px;
 }
 
-.sixth hr {
+.ask-doctos hr {
   margin:15px;
 }
 
-.sixthCareer {
+.ask-doctos-career {
   margin-left: 20px;
 
 }
 
-.careerBox {
+.career-box {
   justify-content: center;
   align-items: center;
+  line-height:24px;
 }
 
-.careerBox > div {
+.career-box > div {
   margin-right: 30px;
 }
 
-.sixthCareer h2 {
+.ask-doctos-career h2 {
   font-size : 20px;
 }
 
-.chatBtn {
+.chat-btn {
   color : #fff;
   background-color : #4caf50;
   border-radius: 30px;
@@ -496,9 +614,9 @@ h2,p{
   border:1px solid #b3e5fc;
 }
 
-/* eighth(Ready to get started?) */
+/* create-appointment(Ready to get started?) */
 
-.eighth {
+.create-appointment {
   width:100%;
   max-width:1215px;
   height:169px;
@@ -507,116 +625,122 @@ h2,p{
   border-radius: 30px;
 }
 
-.eighthBox {
-  width:100%;
-  max-width:1115px;
+.create-appointment-box {
   height:85px;
-  padding:40px;
+  padding:30px 70px;
   margin:0 auto;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
-.eighthMain {
+.create-appointment-main {
+  height:84px;
   color:#fff;
-  line-height: 40px;
+  line-height: 50px;
 }
 
-.eighthBtn {
-  width:300px;
-  height:70px;
+.create-appointment-btn {
+  width:313px;
+  height:69px;
   background-color: #fff;
-  font-size:12px;
+  font-size:18px;
+  font-weight:700;
   color:#58c8f6;
   border-radius: 35px;
   text-align: center;
   line-height:70px;
 }
 
-.eighthTitle {
-  font-size: 18px;
+.create-appointment-title {
+  font-size: 36px;
+  font-weight:700;
 }
 
-.eighthMaintext {
-  font-size: 12px;
+.create-appointment-maintext {
+  font-size: 24px;
 }
 
-/* nineth(Our Clinics) */
+/* ninth(Our Clinics) */
 
-.nineth {
+.our-clinics {
   width:1200px;
   height:798px;
   margin:100px auto;
 }
-.ninethTitle {
+.our-clinics-title {
   font-size:52px;
 }
 
-.ninethMaintext {
+.our-clinics-maintext {
   font-size:24px;
   margin:40px 0px;
 }
 
-.ninethItemBox {
+.our-clinics-item-box {
   flex-wrap: wrap;
 }
 
-.ninethItem {
-  width:500px;
-  height:200px;
+.our-clinics-item {
+  width:530px;
+  height:190px;
   box-shadow: 0px 0px 20px -10px #000;
   border-radius: 20px;
-  margin: 0px 80px 30px 0px;
+  margin-bottom:30px;
 }
 
-#buildingImg1 {
-  width:160px;
-  height:160px;
+.HeadQuarter {
+  font-size:16px;
+  font-weight:700;
+}
+
+.building-img {
+  width:146px;
+  height:150px;
   margin:20px 10px;
   background-image:url(../img/Rectangle1.png);
   background-size:160px;
   border-radius: 20px;
 }
 
-
-.ninethInformation h2:not(.HeadQuarter) {
-  font-size : 16px;
-}
-
-.ninethBtn {
-  width:300px;
-  height:40px;
+.our-clinics-btn {
+  width:340px;
+  height:37px;
   border-radius: 30px;
   border:2px solid #5db761;
-}
-
-.ninethBtn h2 {
   text-align: center;
   color:#5db761;
   font-size: 12px;
-  line-height:40px;
+  line-height:37px;
 }
 
-.ninethInformation {
-  margin:10px;
+.our-clinics-information {
+  margin-top:20px;
+  margin-left:10px;
+  margin-right:20px;
 }
-.ninethInformation div {
+.our-clinics-information div {
   margin:10px 0px;
 }
 
-.ninethIco {
+.call-and-location {
+  width:310px;
+}
+
+.our-clinics-ico {
   width:16px;
   height:16px;
   margin-right:10px;
 }
 
-.ninethPinIco{
+.our-clinics-pin-ico{
   width:16px;
   height:20px;
+  margin-right:10px
 }
 
-.spaceBetween {
+.space-between {
   display:flex;
-  justify-content: space-between;
+  justify-content: space-between; 
 }
 
 footer {
