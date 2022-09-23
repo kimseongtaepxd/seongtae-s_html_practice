@@ -10,10 +10,10 @@
 
   <!-- header -->
     <header>
-      <img class="Medical" src="assets/img/Landsacpe.png" alt="메디컬로고">
+      <a><img class="Medical" src="assets/img/Landsacpe.png" alt="메디컬로고"></a>
       <div class="flex space-between">
         <nav class="Menu">
-          <ul clas="flex">
+          <ul class="flex">
             <li><a>Menu1</a></li>
             <li><a>Menu2</a></li>
             <li><a>Menu3</a></li>
@@ -22,10 +22,10 @@
           </ul>
         </nav>
         <div class="flex">
-          <div id="LOGIN">LOGIN</div>
-          <div id="REGISTER">REGISTER</div>
+          <a id="LOGIN">LOGIN</a>
+          <a id="REGISTER">REGISTER</a>
           <div class="line"></div>
-          <img class="gear" src="assets/img/Shape.png" alt="톱니바퀴아이콘">
+          <a><img class="gear" src="assets/img/Shape.png" alt="톱니바퀴아이콘"></a>
         </div>
       </div>
       <div class="bg"></div>
@@ -36,8 +36,8 @@
         <h1 class="Home-title">Lorem ipsum dolor amet</h1>
         <p class="Home-maintext">Nam sollicitud nunc, cursus eros vulputate sed.Vestibulum lobortis.</p>
         <div class="Home-btn">
-          <h2 class="more-info">MORE INFO</h2>
-          <h2 class="register-now">REGISTER NOW</h2>
+          <h2 class="more-info"><a>MORE INFO</a></h2>
+          <h2 class="register-now"><a>REGISTER NOW</a></h2>
         </div>
       </div>
     </div>
@@ -109,7 +109,6 @@
     </div>
 
     <div class="clinic-facilities">
-
       <div class="clinic-facilities-top">
         <h1 class="clinic-facilities-title">
           Clinic Facilities
@@ -117,13 +116,15 @@
         <div class="clinic-facilities-description flex space-between">
           <p>Nam sollicitudin dignissim nunc, cursus ullamocorper eros vulputate sed.</p>
           <div class="SEE-ALL flex">
-            <div>SEE ALL</div>
+            <a>
+            SEE ALL
             <!-- 화살표 -->
             <svg width="23px" height="28px">
               <line x1="0" y1="16" x2="23" y2="16" stroke-width="3" stroke="#00579b" />
               <line x1="11" y1="4" x2="22" y2="16" stroke-width="3" stroke="#00579b" />
               <line x1="11" y1="28" x2="22" y2="16" stroke-width="3" stroke="#00579b" />
-            </svg>  
+            </svg>
+          </a>
           </div>
         </div>
       </div>
@@ -132,11 +133,11 @@
 
         <div>
           <div class="clinic-facilities-bg"></div>
-
+          <div class="clinic-facilities-circle"></div>
           <div class="arrow-box flex">
             <div>
               <svg class="left-arrow" width="44px" height="44px">
-                <circle cx="22" cy="22" r="22" stroke-width="1" stroke="black" fill="white"/>
+                <circle cx="22" cy="22" r="22" fill="white"/>
                 <line x1="11" y1="23" x2="34" y2="23" stroke-width="3" stroke="#00579b" />
                 <line x1="22" y1="11" x2="33" y2="23" stroke-width="3" stroke="#00579b" />
                 <line x1="22" y1="35" x2="33" y2="23" stroke-width="3" stroke="#00579b" />
@@ -144,7 +145,7 @@
             </div>
             <div>
               <svg class="right-arrow" width="44px" height="44px">
-                <circle cx="22" cy="22" r="22" stroke-width="1" stroke="black" fill="white"/>
+                <circle cx="22" cy="22" r="22" fill="white"/>
                 <line x1="11" y1="23" x2="34" y2="23" stroke-width="3" stroke="#00579b" />
                 <line x1="22" y1="11" x2="33" y2="23" stroke-width="3" stroke="#00579b" />
                 <line x1="22" y1="35" x2="33" y2="23" stroke-width="3" stroke="#00579b" />
@@ -163,9 +164,9 @@
             </p>
           </div>
           <div>
-            <div class="clinic-facilities-item-btn">
+            <a class="clinic-facilities-item-btn">
               SEE DETAIL
-            </div>
+            </a>
           </div>
         </div>
         
@@ -178,9 +179,9 @@
             </p>
           </div>
           <div>
-            <div class="clinic-facilities-item-btn">
+            <a class="clinic-facilities-item-btn">
               SEE DETAIL
-            </div>
+            </a>
           </div>
         </div>
         <div class="clinic-facilities-item">
@@ -192,9 +193,9 @@
             </p>
           </div>
           <div>
-            <div class="clinic-facilities-item-btn">
+            <a class="clinic-facilities-item-btn">
               SEE DETAIL
-            </div>
+            </a>
           </div>
         </div>
 
@@ -235,11 +236,11 @@
 
         <div class="ask-doctos-menu">
           <h1 class="ask-doctos-title">Ask <br> Doctos</h1>
-          <h2 class="ask-doctos-menu-item sky">All</h2>
-          <h2 class="ask-doctos-menu-item">Orthopedic</h2>
-          <h2 class="ask-doctos-menu-item">Nutritionist</h2>
-          <h2 class="ask-doctos-menu-item">Pediatric</h2>
-          <h2 class="ask-doctos-menu-item">Anaesthestic</h2>
+          <h2 class="ask-doctos-menu-item sky"><button>All</button></h2>
+          <h2 class="ask-doctos-menu-item"><button>Orthopedic</button></h2>
+          <h2 class="ask-doctos-menu-item"><button>Nutritionist</button></h2>
+          <h2 class="ask-doctos-menu-item"><button>Pediatric</button></h2>
+          <h2 class="ask-doctos-menu-item"><button>Anaesthestic</button></h2>
         </div>
 
         <div class="ask-doctos-items flex">
@@ -262,7 +263,7 @@
                     4 Years
                   </div>
                 </div>
-                <div class="chat-btn">CHAT</div>
+                <a class="chat-btn">CHAT</a>
               </div>
             </div>
           </div>
@@ -286,7 +287,7 @@
                     4 Years
                   </div>
                 </div>
-                <div class="chat-btn">CHAT</div>
+                <a class="chat-btn">CHAT</a>
               </div>
             </div>
           </div>
@@ -309,7 +310,7 @@
                     4 Years
                   </div>
                 </div>
-                <div class="chat-btn">CHAT</div>
+                <a class="chat-btn">CHAT</a>
               </div>
             </div>
           </div>
@@ -332,7 +333,7 @@
                     4 Years
                   </div>
                 </div>
-                <div class="chat-btn">CHAT</div>
+                <a class="chat-btn">CHAT</a>
               </div>
             </div>
           </div>
@@ -355,7 +356,7 @@
                     4 Years
                   </div>
                 </div>
-                <div class="chat-btn">CHAT</div>
+                <a class="chat-btn">CHAT</a>
               </div>
             </div>
           </div>
@@ -378,7 +379,7 @@
                     4 Years
                   </div>
                 </div>
-                <div class="chat-btn">CHAT</div>
+                <a class="chat-btn">CHAT</a>
               </div>
             </div>
           </div>
@@ -386,15 +387,25 @@
       </div>
     </div>
 
-    <div class="seventh">
-      <div class="seventhTitle"><h2>People Testimonials</h2></div>
-      <div class="seventhMaintext"><p>Nam sollicitudin dignissim nunc, cursus ullamcorper eros vulputate sed.</p></div>
+    <div class="People-testimonials">
+      <div class="People-testimonials-title">
+        <h1>People Testimonials</h1>
+      </div>
+      <div class="People-testimonials-maintext">
+        <p>
+          Nam sollicitudin dignissim nunc, cursus ullamcorper eros vulputate sed.
+        </p>
+      </div>
 
       <div class="flex">
-        <div class="seventhItem">
-          <div class="seventhcircle">
-            <div class="seventhItemBox">
-              <div class="seventReview"><p>Nam sollicitudin dignissim nunc, cursus ullamcorper eros vulputate sed. Vestibulum sit amet tortor sit amet libero.</p></div>
+        <div class="People-testimonials-item">
+          <div class="People-testimonials-circle">
+            <div class="People-testimonials-item-box">
+              <div class="People-testimonials-review">
+                <p>
+                  Nam sollicitudin dignissim nunc, cursus ullamcorper eros vulputate sed. Vestibulum sit amet tortor sit amet libero.
+                </p>
+              </div>
               <div class="stars flex">
                 <span class="star">
                   <img src="assets/img/star.png" alt="별">
@@ -412,23 +423,29 @@
                   <img src="assets/img/star.png" alt="별">
                 </span>
               </div>
-              <div class="flex">
-                <div class="seventhNameAndJob">
-                  <div class="seventhName"><h2>John Doe</h2></div>
-                  <div class="seventhJob"><h2>Chief Digital Officer</h2></div>
+              <div class="People-testimonials-profile flex">
+                <div class="People-testimonials-name-and-job">
+                  <div class="People-testimonials-name">
+                    <h2>John Doe</h2>
+                  </div>
+                  <div class="People-testimonials-job">
+                    <h2>Chief Digital Officer</h2>
+                  </div>
                 </div>
-                <div class="seventhFace">
-                  <img>
-                </div>
+                <div class="People-testimonials-face"></div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="seventhItem">
-          <div class="seventhcircle">
-            <div class="seventhItemBox">
-              <div class="seventReview"><p>Nam sollicitudin dignissim nunc, cursus ullamcorper eros vulputate sed. Vestibulum sit amet tortor sit amet libero.</p></div>
+        <div class="People-testimonials-item">
+          <div class="People-testimonials-circle">
+            <div class="People-testimonials-item-box">
+              <div class="People-testimonials-review">
+                <p>
+                  Nam sollicitudin dignissim nunc, cursus ullamcorper eros vulputate sed. Vestibulum sit amet tortor sit amet libero.
+                </p>
+              </div>
               <div class="stars flex">
                 <span class="star">
                   <img src="assets/img/star.png" alt="별">
@@ -446,24 +463,31 @@
                   <img src="assets/img/star.png" alt="별">
                 </span>
               </div>
-              <div class="flex">
-                <div class="seventhNameAndJob">
-                  <div class="seventhName"><h2>John Doe</h2></div>
-                  <div class="seventhJob"><h2>Chief Digital Officer</h2></div>
+              <div class="People-testimonials-profile flex">
+                <div class="People-testimonials-name-and-job">
+                  <div class="People-testimonials-name">
+                    <h2>John Doe</h2>
+                  </div>
+                  <div class="People-testimonials-job">
+                    <h2>Chief Digital Officer</h2>
+                  </div>
                 </div>
-                <div class="seventhFace">
-                  <img>
-                </div>
+                <div class="People-testimonials-face"></div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="seventhItem">
-          <div class="seventhcircle">
-            <div class="seventhItemBox">
-              <div class="seventReview"><p>Nam sollicitudin dignissim nunc, cursus ullamcorper eros vulputate sed. Vestibulum sit amet tortor sit amet libero.</p></div>
-              <div class="stars flex">
+        <div class="People-testimonials-item">
+          <div class="People-testimonials-circle">
+            <div class="People-testimonials-item-box">
+              <div class="People-testimonials-review">
+                <p>
+                  Nam sollicitudin dignissim nunc, cursus ullamcorper eros vulputate sed. Vestibulum sit amet tortor sit amet libero.
+                </p>
+              </div>
+                  <img src="assets/img/star.png" alt="별">
+                  <div class="stars flex">
                 <span class="star">
                   <img src="assets/img/star.png" alt="별">
                 </span>
@@ -480,14 +504,12 @@
                   <img src="assets/img/star.png" alt="별">
                 </span>
               </div>
-              <div class="flex">
-                <div class="seventhNameAndJob">
-                  <div class="seventhName"><h2>John Doe</h2></div>
-                  <div class="seventhJob"><h2>Chief Digital Officer</h2></div>
+              <div class="People-testimonials-profile flex">
+                <div class="People-testimonials-name-and-job">
+                  <h2 class="People-testimonials-name">John Doe</h2>
+                  <h2 class="People-testimonials-job">Chief Digital Officer</h2>
                 </div>
-                <div class="seventhFace">
-                  <img>
-                </div>
+                <div class="People-testimonials-face"></div>
               </div>
             </div>
           </div>
@@ -515,9 +537,9 @@
             <p>Pellentesque ac bibendum tortor.Nulla eget lobortis lacus.</p>
           </div>
         </div>
-        <div class="create-appointment-btn">
+        <a class="create-appointment-btn">
           CREATE APPOINTMENT NOW!
-        </div>
+        </a>
       </div>
     </div>
 
@@ -549,8 +571,8 @@
                 <img class="our-clinics-pin-ico" src="assets/img/pinico.png" alt="장소아이콘">
                 <h2>Lorem ipsum street no 14 Block A</h2>
               </div>
-              <div class="our-clinics-btn">
-                CONTACT
+              <div class="our-clinics-btn" >
+                <a>CONTACT</a>
               </div>
             </div>
           </div>
@@ -574,7 +596,7 @@
                 <h2 >Lorem ipsum street no 14 Block A</h2>
               </div>
               <div class="our-clinics-btn">
-                CONTACT
+                <a>CONTACT</a>
               </div>
             </div>
           </div>
@@ -598,7 +620,7 @@
                 <h2 >Lorem ipsum street no 14 Block A</h2>
               </div>
               <div class="our-clinics-btn">
-                <h2>CONTACT</h2>
+                <a>CONTACT</a>
               </div>
             </div>
           </div>
@@ -622,7 +644,7 @@
                 <h2 >Lorem ipsum street no 14 Block A</h2>
               </div>
               <div class="our-clinics-btn">
-                <h2>CONTACT</h2>
+                <a>CONTACT</a>
               </div>
             </div>
           </div>
@@ -646,7 +668,7 @@
                 <h2>Lorem ipsum street no 14 Block A</h2>
               </div>
               <div class="our-clinics-btn">
-                <h2>CONTACT</h2>
+                <a>CONTACT</a>
               </div>
             </div>
           </div>
@@ -670,7 +692,7 @@
                 <h2>Lorem ipsum street no 14 Block A</h2>
               </div>
               <div class="our-clinics-btn">
-                <h2>CONTACT</h2>
+                <a>CONTACT</a>
               </div>
             </div>
           </div>
@@ -679,51 +701,54 @@
       </div>
     </div>
 
-    <footer>
-      <div class="footerBox flex">
-        <div class="footerInformation">
-          <img src="assets/img/Landsacpe.png" alt="Medical">
-          <h2 class="footerMaintext">Nam posuere accumsan porta Integer id tincidunt sit amet sed libero.</h2>
-          <h2 class="copyright">© Skyrev Theme 2021</h2>
+    <footer class="flex space-between">
+      <div class="footer-box flex">
+
+        <div class="footer-information">
+          <a><img src="assets/img/Landsacpe.png" alt="Medical"></a>
+          <p class="footer-maintext">Nam posuere accumsan porta Integer id tincidunt sit amet sed libero.</p>
+          <p class="copyright">© Skyrev Theme 2021</p>
         </div>
-        <div class="footerMenu flex">
+        <div class="footer-menu flex">
           <div>
             <h2 class="blue">COMPANY</h2>
-            <h2>Donec dignissim</h2>
-            <h2>Curabitur egestas</h2>
-            <h2>Nam posuere</h2>
-            <h2>Aenean facilisis</h2>
+            <h3>Donec dignissim</h3>
+            <h3>Curabitur egestas</h3>
+            <h3>Nam posuere</h3>
+            <h3>Aenean facilisis</h3>
           </div>
           <div>
             <h2 class="blue">SERVICES</h2>
-            <h2>Cras convallis</h2>
-            <h2>Vestibulum faucibus</h2>
-            <h2>Quisque lacinia purus</h2>
-            <h2>Aliquam nec ex</h2>
+            <h3>Cras convallis</h3>
+            <h3>Vestibulum faucibus</h3>
+            <h3>Quisque lacinia purus</h3>
+            <h3>Aliquam nec ex</h3>
           </div>
           <div>
             <h2 class="blue">RESOURES</h2>
-            <h2>Suspendisse porttitor</h2>
-            <h2>Nam posuere</h2>
-            <h2>Curabitur egestas</h2>
-          </div>
-        </div>
-        <div class="footerSNS">
-          <div class="flex">
-            <div class="grayCircle"><img class="ico" src="assets/img/social-facebook.png"></div>
-            <div class="grayCircle"><img class="ico" src="assets/img/social-linkedin.png"></div>
-            <div class="grayCircle"><img class="icoW" src="assets/img/social-twiter.png"></div>
-            <div class="grayCircle"><img class="ico" src="assets/img/social-instagram.png"></div>
-          </div>
-          <div>
-            <div class="language flex">
-              <div><img class="earth" src="assets/img/earth.png" alt="지구"></div>
-              <h2>English - En</h2>
-              <div><img class="arrow" src="assets/img/down-side-arrow.png" alt="아래화살표"></div>
-            </div>
+            <h3>Suspendisse porttitor</h3>
+            <h3>Nam posuere</h3>
+            <h3>Curabitur egestas</h3>
           </div>
         </div>
       </div>
+
+      <div class="footer-SNS">
+        <div class="flex">
+          <a class="gray-circle"><img src="assets/img/social-facebook.png" alt="페이스북로고"></a>
+          <a class="gray-circle"><img src="assets/img/social-linkedin.png" alt="링크드인로고"></a>
+          <a class="gray-circle"><img src="assets/img/social-twiter.png" alt="트위터로고"></a>
+          <a class="gray-circle"><img src="assets/img/social-instagram.png" alt="인스타그램"></a>
+        </div>
+        <div>
+          <div class="language-box flex">
+            <div><img class="earth" src="assets/img/earth.png" alt="지구"></div>
+            <div class="language">English - En</div>
+            <div><img class="arrow" src="assets/img/down-side-arrow.png" alt="아래화살표"></div>
+          </div>
+        </div>
+      </div>
+
     </footer>
 
   </body>

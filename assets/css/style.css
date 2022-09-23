@@ -1,7 +1,7 @@
 /* reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
+a, abbr, acronym, address, big, button, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
@@ -20,6 +20,9 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+button {
+  all:unset;
+}
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -260,10 +263,12 @@ h2,p{
 /* clinic-facilities(Clinic Facilities) */
 
 .clinic-facilities {
+  position: relative;
   width:100%;
   max-width:1280px;
   height:780px;
   margin: 38px auto;
+  background-size:100%;
 }
 
 .clinic-facilities-top {
@@ -283,7 +288,7 @@ h2,p{
   font-size:24px;
 }
 
-.SEE-ALL > div {
+.SEE-ALL > a {
   font-size:28px;
   font-weight: 600;
   color:#055a9d;
@@ -310,8 +315,21 @@ h2,p{
   width:430px;
   height:365px;
   background-image : url(../img/Clinic_Facilities_bg.png);
+  background-size : 100%;
   background-repeat: no-repeat;
 }
+
+.clinic-facilities-circle {
+  position:absolute;
+  width:1200px;
+  height:1200px;
+  top:-190px;
+  left:-420px;
+  background-image : url(../img/Clinic_Facilities_Circle.PNG);
+  background-repeat: no-repeats;
+  z-index:-1;
+}
+
 
 .arrow-box {
   justify-content: center;
@@ -319,6 +337,8 @@ h2,p{
 
 .arrow-box > div {
   margin:0px 8px;
+  border-radius: 50%;
+  box-shadow: 0 0px 70px -10px rgba(0, 0, 0, 1);
 }
 
 .left-arrow {
@@ -331,7 +351,9 @@ h2,p{
   height:390px;
   margin-right:40px;
   box-shadow: 0 17px 20px -18px rgba(0, 0, 0, 1);
+  background-color: #fff;
   border-radius: 15px;
+  z-index: 1;
 }
 
 .clinic-facilities-item-img {
@@ -382,7 +404,7 @@ h2,p{
 .our-speciality-title {
   margin-top:135px;
   font-size:52px;
-  font-weight:700;
+  font-weight:900;
 }
 
 .our-speciality-maintext {
@@ -460,6 +482,7 @@ h2,p{
   height:642px;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  overflow: hidden;
 }
 
 .ask-doctos-item {
@@ -536,41 +559,50 @@ h2,p{
   padding:10px 30px;
 }
 
-/* seventh(People Testimonials) */
+/* People-testimonials(People Testimonials) */
 
-.seventh {
+.People-testimonials {
   width:100%;
   max-width:1452px;
   height:712px;
   margin:0px auto;
 }
 
-.seventhTitle {
+.People-testimonials-title {
   margin-left:140px;
-  font-size : 36px;
+  font-size : 52px;
+  font-weight:900;
 }
-.seventhMaintext {
+.People-testimonials-maintext {
   margin:50px 0px 50px 140px;
   font-size : 24px;
 }
 
-.seventhItem {
-  width:300px;
-  height:300px;
-  margin:25px;
-}
-
-.sevnethcircle {
+.People-testimonials-circle {
   width:300px;
   height:300px;
   border-radius:0px 50% 50% 50%;
-  box-shadow: 0 17px 20px -18px rgba(0, 0, 0, 1);
+  box-shadow: 0 0px 100px -80px rgba(0, 0, 0, 1);
 }
 
-.seventhItemBox {
-  width:250px;
+.People-testimonials-item {
+  width:300px;
+  height:300px;
+  overflow: hidden;
+  margin:25px;
+}
+
+.People-testimonials-item-box {
+  position:relative;
+  max-width:250px;
   height:250px;
-  margin:auto;
+  margin:0 auto;
+  padding-top:30px;
+}
+
+.People-testimonials-review {
+  max-width:230px;
+  line-height:20px;
 }
 
 .stars {
@@ -582,20 +614,35 @@ h2,p{
   height:24px;
 }
 
-.seventhNameAndJob {
+.People-testimonials-profile {
+  position:absolute;
+  right:0px;
+  bottom:0px;
+}
+.People-testimonials-name-and-job {
+  margin:auto 0px;
+  margin-right:10px;
+  line-height: 25px;
   text-align: right;
 }
 
-.seventhJob {
+.People-testimonials-name {
+  font-size:20px;
+  font-weight:700;
+}
+.People-testimonials-job {
   font-size:12px;
   color:#929292;
 }
 
-.seventhFace {
-  width:100px;
-  height:100px;
+.People-testimonials-face {
+  width: 80px;
+  height:80px;
   border-radius: 50% 50% 0px 50%;
   border: 1px solid #000;
+  background-image: url(../img/manFace.png);
+  background-color: #fff;
+  background-size:80px;
 }
 
 .circles {
@@ -669,6 +716,7 @@ h2,p{
 }
 .our-clinics-title {
   font-size:52px;
+  font-weight:700;
 }
 
 .our-clinics-maintext {
@@ -748,67 +796,84 @@ footer {
   max-width : 1173px;
   height:187px;
   margin:0px auto;
-  padding-top:100px;
+  padding-bottom:100px;
 }
 
-.footerBox h2:not(.blue) {
-  font-size:16px;
+.footer-box h2 {
+  text-align: left;
+  line-height: 35px;
+  font-size : 18px;
+  font-weight:700;
+  color : #03ACF2;
 }
-.footerInformation {
+
+.footer-information {
   width:100%;
-  max-width:350px;
+  max-width:290px;
+  margin-right:25px;
 }
 
-.footerMaintext {
+.footer-maintext {
   margin:20px 0px;
+  line-height:25px;
 }
 
-.footerMenu div {
-  width: 180px;
-  height: 100%;
+.footer-menu div {
+  width: 208px;
+  height: 185px;
 }
 
-.footerMenu div h2 {
+.footer-menu div h3 {
   text-align: left;
   line-height: 35px;
 }
 
 .blue {
-  font-size : 18px;
-  color : #03ACF2;
+  
 }
 
-.footerSNS .flex {
-  margin:20px 0px;
+.footer-SNS {
+  float:right;
 }
-.grayCircle {
+.footer-SNS .flex {
+  margin:30px 0px;
+}
+
+.gray-circle {
   width:36px;
   height:36px;
   background-color: #eae5e7;
   border-radius:50%;
   text-align: center;
   line-height:36px;
-  margin:8px;
+  margin-left:12px;
+  margin-right:4px;
 }
 
-.grayCircle img {
+.gray-circle img {
   margin-top : 10px;
 }
 
-.language {
-  width:200px;
-  height:40px;
+.gray-circle:first-child img {
+  margin-top : 5px;
+}
+
+.language-box {
+  width:211px;
+  height:38.5px;
   background-color: #fff;
   border:1px solid #85d7f9;
   border-radius: 10px;
   justify-content: left;
-  line-height: 40px;
+  line-height: 38.5px;
   text-align: left;
 }
 
-.language h2 {
+.language {
   margin:0px;
   width:135px;
+  font-size:18px;
+  font-weight:700;
 }
 
 .earth {
