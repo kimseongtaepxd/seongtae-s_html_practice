@@ -45,7 +45,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+a {
+  color: inherit;
+  text-decoration: none;
+}
 html,body{
   width:100%;
 }
@@ -61,6 +64,37 @@ body > div {
   background-repeat: no-repeat;
   background-position: left bottom;
 }
+
+/* font face */
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url('../fonts/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url('../fonts/Lato-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato-Black';
+  src: url('../fonts/Lato-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+}
+
+
+body {
+  font-family : 'Lato-Regular';
+}
+
+h1, h2 {
+  font-family : 'Lato-Bold';
+}
+
 
 /* header */
 
@@ -82,22 +116,27 @@ header >div{
 
 .Menu {
   font-size:18px;
-  font-weight:700;
 }
 
+.Menu > ul > li > a {
+  font-family: "Lato-Bold";
+
+}
 /* hover (공부필요) */
 .Menu > ul > li:hover {
   display: inline-block;
   margin-right:50px;
-  line-height:103px;
+  margin-top:37px;
+  margin-bottom:27px;
+  padding-bottom:10px;
+  line-height:27px;
 
   /* you can change these variables to control the border */
   --border-color: #03acf2;
   --border-width: 5px;
-  --bottom-distance: 20px; /* you can increase this */
+  --bottom-distance: 0px; /* you can increase this */
   
-  color: #03acf2;
-  display: inline-block;
+  color: #3f80b4;
   background-image: linear-gradient(var(--border-color), var(--border-color));
   background-size: 0% var(--border-width);
   background-repeat: no-repeat;
@@ -107,14 +146,16 @@ header >div{
 .Menu > ul > li {
   display: inline-block;
   margin-right:50px;
-  line-height:103px;
+  margin-top:37px;
+  margin-bottom:27px;
+  padding-bottom:10px;
+  line-height:27px;
   
   /* you can change these variables to control the border */
   --border-color: #03acf2;
   --border-width: 5px;
-  --bottom-distance: 20px; /* you can increase this */
+  --bottom-distance: 0px; /* you can increase this */
   
-  display: inline; /* should be 'inline' for multiple line animation */
   background-image: linear-gradient(var(--border-color), var(--border-color));
   background-size: 0% var(--border-width);
   background-repeat: no-repeat;
@@ -123,8 +164,44 @@ header >div{
 }
 
 .Menu > ul > li:hover {
-  background-size: 100% var(--border-width);
+  background-size: 55% var(--border-width);
 }
+
+.Solution > div:hover > h2 {
+  color: #00579b;
+}
+
+.Solution > div:hover {
+  /* you can change these variables to control the border */
+  --border-color: #03acf2;
+  --border-width: 5px;
+  --bottom-distance: 0px; /* you can increase this */
+  
+  display: inline-block;
+  background-image: linear-gradient(var(--border-color), var(--border-color));
+  background-size: 0% var(--border-width);
+  background-repeat: no-repeat;
+  transition: background-size 0.3s;
+}
+
+.Solution > div {
+
+  /* you can change these variables to control the border */
+  --border-color: #03acf2;
+  --border-width: 5px;
+  --bottom-distance: 0px; /* you can increase this */
+  
+  background-image: linear-gradient(var(--border-color), var(--border-color));
+  background-size: 0% var(--border-width);
+  background-repeat: no-repeat;
+  transition: background-size 0.5s;
+  background-position: 0 calc(100% - var(--bottom-distance))
+}
+
+.Solution > div:hover {
+  background-size: 40% var(--border-width);
+}
+
 /* hover (end) */
 
 #LOGIN {
@@ -138,6 +215,7 @@ header >div{
   color:#fff;
   background-color: #4caf50;
   border-radius: 50px;
+  font-family: "Lato-Black";
   font-size:16px;
   text-align: center;
   line-height: 40px;
@@ -176,7 +254,6 @@ header > div > div {
 .Home-title {
   vertical-align:bottom;
   font-size:48px;
-  font-weight:700;
 }
 
 h2,p{
@@ -203,7 +280,6 @@ h2,p{
 
 .more-info{
   font-size : 24px;
-  font-weight:600;
   color:#357a38;
 }
 
@@ -235,6 +311,7 @@ h2,p{
 .Solution > div {
   border-right:1px solid #e0e0e0;
   padding-right:15px;
+  padding-bottom:10px;
 }
 
 .Solution > div:last-child {
@@ -244,7 +321,6 @@ h2,p{
 
 .Solution h2 {
   font-size : 28px;
-  font-weight: 600;
   height:43px;
 }
 
@@ -280,8 +356,8 @@ h2,p{
 }
 
 .big {
+  font-family : "Lato-Bold";
   font-size : 48px;
-  font-weight: 900;
 }
 
 .green {
@@ -315,7 +391,6 @@ h2,p{
 
 .clinic-facilities-title {
   font-size:52px;
-  font-weight:900;
 }
 
 .clinic-facilities-description {
@@ -326,7 +401,6 @@ h2,p{
 
 .SEE-ALL > a {
   font-size:28px;
-  font-weight: 600;
   color:#055a9d;
   margin-right:15px;
   }
@@ -409,7 +483,6 @@ h2,p{
 .clinic-facilities-item-maintext {
   color:#7d7d7d;
   font-size:16px;
-  font-weight:500;
   line-height:25px;
 }
 
@@ -436,7 +509,6 @@ h2,p{
 .our-speciality-title {
   margin-top:135px;
   font-size:52px;
-  font-weight:900;
 }
 
 .our-speciality-maintext {
@@ -444,13 +516,11 @@ h2,p{
   height:115px;
   padding: 50px 0px;
   font-size: 24px;
-  font-weight: 500;
   line-height:38px;
 }
 
 .our-speciality-menu-box{
   width:493px;
-  height:124px;
 }
 
 .our-speciality-menu {
@@ -460,7 +530,7 @@ h2,p{
 
 .our-speciality-menu div {
   margin-right:20px;
-  padding:5px 40px;
+  padding:10px 40px;
   border:#f7f7f7 3px solid;
   border-radius: 30px;
   font-size:14px;
@@ -492,15 +562,13 @@ h2,p{
   width:100%;
   max-width:300px;
   font-size: 52px;
-  font-weight:900;
   margin-top:58px;
 }
 
 .ask-doctos-menu-item {
-  margin:35px 0px;
+  margin:45px 0px;
   padding-left:20px;
   font-size:24px;
-  font-weight:500;
   vertical-align:center;
 }
 
@@ -550,7 +618,6 @@ h2,p{
 
 .Name {
   font-size:24px;
-  font-weight:700;
   padding:10px 0px;
 }
 
@@ -608,7 +675,6 @@ h2,p{
 .People-testimonials-title {
   margin-left:140px;
   font-size : 52px;
-  font-weight:900;
 }
 .People-testimonials-maintext {
   margin:50px 0px 50px 140px;
@@ -666,7 +732,6 @@ h2,p{
 
 .People-testimonials-name {
   font-size:20px;
-  font-weight:700;
 }
 .People-testimonials-job {
   font-size:12px;
@@ -749,8 +814,8 @@ h2,p{
   width:313px;
   height:69px;
   background-color: #fff;
+  font-family: bold;
   font-size:18px;
-  font-weight:700;
   color:#58c8f6;
   border-radius: 35px;
   text-align: center;
@@ -758,11 +823,12 @@ h2,p{
 }
 
 .create-appointment-title {
+  font-family: "Lato-Black";
   font-size: 36px;
-  font-weight:700;
 }
 
 .create-appointment-maintext {
+  font-family: "Lato-Bold";
   font-size: 24px;
 }
 
@@ -775,7 +841,6 @@ h2,p{
 }
 .our-clinics-title {
   font-size:52px;
-  font-weight:700;
 }
 
 .our-clinics-maintext {
@@ -796,8 +861,8 @@ h2,p{
 }
 
 .HeadQuarter {
+  font-family: "Lato-Black";
   font-size:16px;
-  font-weight:700;
 }
 
 .building-img {
@@ -816,6 +881,7 @@ h2,p{
   border:2px solid #5db761;
   text-align: center;
   color:#5db761;
+  font-family: "Lato-Bold";
   font-size: 12px;
   line-height:37px;
 }
@@ -863,7 +929,6 @@ footer {
   text-align: left;
   line-height: 35px;
   font-size : 18px;
-  font-weight:700;
   color : #03ACF2;
 }
 
@@ -883,13 +948,13 @@ footer {
   height: 185px;
 }
 
+.footer-menu > div > h2 {
+  font-family: "Lato-Black";
+}
+
 .footer-menu div h3 {
   text-align: left;
   line-height: 35px;
-}
-
-.blue {
-  
 }
 
 .footer-SNS {
@@ -932,8 +997,8 @@ footer {
 .language {
   margin:0px;
   width:135px;
+  font-family: "Roboto-Medium";
   font-size:18px;
-  font-weight:700;
 }
 
 .earth {
