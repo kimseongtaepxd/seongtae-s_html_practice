@@ -50,6 +50,18 @@ html,body{
   width:100%;
 }
 
+body {
+  background-image:url(../img/Illustration.png);
+  background-repeat: no-repeat;
+  background-position:right top;
+}
+
+body > div {
+  background-image : url(../img/Deco.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
 /* header */
 
 header {
@@ -73,11 +85,47 @@ header >div{
   font-weight:700;
 }
 
+/* hover (공부필요) */
+.Menu > ul > li:hover {
+  display: inline-block;
+  margin-right:50px;
+  line-height:103px;
+
+  /* you can change these variables to control the border */
+  --border-color: #03acf2;
+  --border-width: 5px;
+  --bottom-distance: 20px; /* you can increase this */
+  
+  color: #03acf2;
+  display: inline-block;
+  background-image: linear-gradient(var(--border-color), var(--border-color));
+  background-size: 0% var(--border-width);
+  background-repeat: no-repeat;
+  transition: background-size 0.3s;
+}
+
 .Menu > ul > li {
   display: inline-block;
   margin-right:50px;
   line-height:103px;
+  
+  /* you can change these variables to control the border */
+  --border-color: #03acf2;
+  --border-width: 5px;
+  --bottom-distance: 20px; /* you can increase this */
+  
+  display: inline; /* should be 'inline' for multiple line animation */
+  background-image: linear-gradient(var(--border-color), var(--border-color));
+  background-size: 0% var(--border-width);
+  background-repeat: no-repeat;
+  transition: background-size 0.5s;
+  background-position: 0 calc(100% - var(--bottom-distance))
 }
+
+.Menu > ul > li:hover {
+  background-size: 100% var(--border-width);
+}
+/* hover (end) */
 
 #LOGIN {
   font-size: 16px;
@@ -110,17 +158,6 @@ header > div > div {
 
 .flex{
   display:flex;
-}
-
-.bg {
-  position:absolute;
-  width:700px;
-  height:960px;
-  top:0px;
-  right:0px;
-  background-image:url(../img/Illustration.png);
-  background-repeat: no-repeat;
-  z-index:-1;
 }
 
 /*Home (Lorem ipsum dolor amet) */
@@ -268,7 +305,6 @@ h2,p{
   max-width:1280px;
   height:780px;
   margin: 38px auto;
-  background-size:100%;
 }
 
 .clinic-facilities-top {
@@ -293,12 +329,9 @@ h2,p{
   font-weight: 600;
   color:#055a9d;
   margin-right:15px;
-  background-image : url(../img/clinic_img_1);
   }
 
-.blue_arrow {
-  content:url(../img/blue_arrow.PNG);
-}
+
 
 .clinic-facilities-item-btn {
   margin-top:34px;
@@ -315,7 +348,7 @@ h2,p{
   width:430px;
   height:365px;
   background-image : url(../img/Clinic_Facilities_bg.png);
-  background-size : 100%;
+  background-size : 85%;
   background-repeat: no-repeat;
 }
 
@@ -343,7 +376,6 @@ h2,p{
 
 .left-arrow {
   transform: scaleX(-1);
-
 }
 
 .clinic-facilities-item {
@@ -360,7 +392,7 @@ h2,p{
   width:260px;
   height:175px;
   border-radius: 15px 15px 30px 0px;
-  background-image:url(../img/clinic_img_1.png)
+  background-image:url(../img/clinic_img_1.png);
 }
 
 .clinic-facilities-text-box {
@@ -451,6 +483,9 @@ h2,p{
   max-width:1324px;
   height:649px;
   margin:130px auto;
+  background-image:url(../img/ask_doctos_bg.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
 .ask-doctos-title {
@@ -496,6 +531,7 @@ h2,p{
   height:156px;
   margin: 44px 0px 0px 40px;
   box-shadow: -15px -15px 30px #f9f9f9;
+  background-color: #fff;
 }
 
 .face {
