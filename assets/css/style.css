@@ -66,6 +66,10 @@ body > div {
   background-position: left bottom;
 }
 
+input {
+  display: none;
+}
+
 /* font face */
 @font-face {
   font-family: 'Lato-Regular';
@@ -109,6 +113,10 @@ header {
 
 header >div{
   width:100%;
+}
+
+header > h1 > a > span {
+  display: none;
 }
 
 .Medical {
@@ -205,6 +213,8 @@ header >div{
 
 /* hover (end) */
 
+/* header */
+
 #LOGIN {
   font-size: 16px;
   line-height: 40px;
@@ -287,18 +297,18 @@ h2,p{
 .register-now {
   margin:0px 26px;
   width:260px;
-  height:40px;
+  height:50px;
   color:#fff;
-  background-color: #4caf50;
+  background-color: #03acf2;
   border-radius: 50px;
   text-align: center;
-  line-height:40px;
+  line-height:50px;
   
 }
 
 
 
-/*second(Buiness Solution)*/
+/*Buiness Solution*/
 
 .Solution {
   width:100%;
@@ -345,15 +355,16 @@ h2,p{
   align-items: center;
 }
 
+
 .Specification-img {
   text-align: left;
   margin-right:20px;
 }
 
-.SpecificationItem {
+.Specification-item {
   align-items: flex-end;
   justify-content: center;
-  margin:15px;
+  margin:15px 0px;
 }
 
 .big {
@@ -370,11 +381,12 @@ h2,p{
 }
 
 .Specification-description {
+  margin:30px;
   font-size:18px;
   text-align: center;
 }
 
-/* clinic-facilities(Clinic Facilities) */
+/* Clinic Facilities */
 
 .clinic-facilities {
   position: relative;
@@ -402,17 +414,10 @@ h2,p{
 
 .SEE-ALL > a {
   font-size:28px;
+  font-family: 'Lato-Bold';
   color:#055a9d;
   margin-right:15px;
   }
-
-
-
-.clinic-facilities-item-btn {
-  margin-top:34px;
-  width:100%;
-  text-align: right;
-}
 
 .clinic-facilities-bottom {
   display: flex;
@@ -454,10 +459,11 @@ h2,p{
 }
 
 .clinic-facilities-item {
+  position: relative;
   width:260px;
   height:390px;
   margin-right:40px;
-  box-shadow: 0 17px 20px -18px rgba(0, 0, 0, 1);
+  box-shadow: 0 17px 80px -60px rgba(0, 0, 0, 1);
   background-color: #fff;
   border-radius: 15px;
   z-index: 1;
@@ -467,7 +473,19 @@ h2,p{
   width:260px;
   height:175px;
   border-radius: 15px 15px 30px 0px;
+  background-size:260px;
+}
+
+#clinic-facilities-item-img-1{
   background-image:url(../img/clinic_img_1.png);
+}
+
+#clinic-facilities-item-img-2{
+  background-image:url(../img/clinic_img_2.png);
+}
+
+#clinic-facilities-item-img-3{
+  background-image:url(../img/clinic_img_3.png);
 }
 
 .clinic-facilities-text-box {
@@ -488,8 +506,11 @@ h2,p{
 }
 
 .clinic-facilities-item-btn {
+  position: absolute;
   width:144px;
-  padding:9px 0px;
+  padding:12px 0px;
+  bottom:0px;
+  right:0px;
   color:#fff;
   border-radius: 15px 0px 15px 0px;
   background-color:#4caf50;
@@ -498,7 +519,7 @@ h2,p{
   float: right;
 }
 
-/* fifth(Our Speciality) */
+/* Our Speciality */
 
 .our-speciality {
   width:100%;
@@ -548,7 +569,7 @@ h2,p{
   background-image:url(../img/Illustration\ &\ Title.png);
 }
 
-/* ask-doctosth(Ask Doctos) */
+/* ask doctosth */
 .ask-doctos {
   width:100%;
   max-width:1324px;
@@ -559,9 +580,12 @@ h2,p{
   background-position: right bottom;
 }
 
-.ask-doctos-title {
+.ask-doctos-menu {
   width:100%;
   max-width:300px;
+}
+
+.ask-doctos-title {
   font-size: 52px;
   margin-top:58px;
 }
@@ -574,7 +598,7 @@ h2,p{
 }
 
 .sky {
-  width:220px;
+  width:170px;
   height:40px;
   background-color: #b3e5fc;
   color:#1365a5;
@@ -585,32 +609,33 @@ h2,p{
 .ask-doctos-items {
   height:642px;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   overflow: hidden;
 }
 
 .ask-doctos-item {
   position:relative;
-  width:445px;
-  height:200px;
+  width:400px;
+  height:180px;
+  margin-right:35px;
+  margin-bottom: 35px;
 }
 
 .ask-doctos-item-box {
-  width:405px;
+  width:375px;
   height:156px;
-  margin: 44px 0px 0px 40px;
-  box-shadow: -15px -15px 30px #f9f9f9;
+  margin: 30px 0px 0px 25px;
+  border-radius: 20px;
+  box-shadow: -50px -10px 100px -65px #000;
   background-color: #fff;
 }
 
 .face {
   position:absolute;
-  width:100px;
-  height:100px;
+  width:85px;
+  height:85px;
   border-radius: 0px 50% 50% 50%;
-  border: 1px solid #000;
-  background-image:url(../img/manFace.png);
-  background-size:100px;
+  background-color:#fff;
 }
 
 .ask-doctos-name-and-job {
@@ -638,7 +663,7 @@ h2,p{
 }
 
 .ask-doctos-career {
-  margin-left: 20px;
+  margin-left: 10px;
 
 }
 
@@ -648,22 +673,26 @@ h2,p{
   line-height:24px;
 }
 
-.career-box > div {
+.good {
+  margin-right: 25px;
+}
+
+.career {
   margin-right: 30px;
 }
 
-.ask-doctos-career h2 {
-  font-size : 20px;
+.good , .career {
+  color : #9e9e9e;
 }
 
 .chat-btn {
   color : #fff;
   background-color : #4caf50;
   border-radius: 30px;
-  padding:10px 30px;
+  padding:13px 35px;
 }
 
-/* People-testimonials(People Testimonials) */
+/* People testimonials */
 
 .People-testimonials {
   position: relative;
@@ -710,13 +739,13 @@ h2,p{
   line-height:20px;
 }
 
-.stars {
+.star-rating {
   margin:40px 0px;
 }
 
-.star img {
-  width:24px;
-  height:24px;
+.star-rating img {
+  width:30px;
+  height:30px;
 }
 
 .People-testimonials-profile {
@@ -743,8 +772,6 @@ h2,p{
   width: 80px;
   height:80px;
   border-radius: 50% 50% 0px 50%;
-  border: 1px solid #000;
-  background-image: url(../img/manFace.png);
   background-color: #fff;
   background-size:80px;
 }
@@ -786,7 +813,7 @@ h2,p{
   border:1px solid #b3e5fc;
 }
 
-/* create-appointment(Ready to get started?) */
+/* Ready to get started? */
 
 .create-appointment {
   width:100%;
@@ -798,9 +825,7 @@ h2,p{
 }
 
 .create-appointment-box {
-  height:85px;
-  padding:30px 70px;
-  margin:0 auto;
+  padding:40px 80px;
   justify-content: space-between;
   align-items: flex-end;
 }
@@ -815,9 +840,9 @@ h2,p{
   width:313px;
   height:69px;
   background-color: #fff;
-  font-family: bold;
+  font-family: 'Lato-Bold';
   font-size:18px;
-  color:#58c8f6;
+  color:#3dbff5;
   border-radius: 35px;
   text-align: center;
   line-height:70px;
@@ -839,6 +864,7 @@ h2,p{
   width:1200px;
   height:798px;
   margin:100px auto;
+  margin-bottom:150px;
 }
 .our-clinics-title {
   font-size:52px;
@@ -846,7 +872,7 @@ h2,p{
 
 .our-clinics-maintext {
   font-size:24px;
-  margin:40px 0px;
+  margin:45px 0px;
 }
 
 .our-clinics-item-box {
@@ -854,12 +880,19 @@ h2,p{
 }
 
 .our-clinics-item {
-  width:530px;
+  width:540px;
   height:190px;
   box-shadow: 0px 0px 20px -10px #000;
   border-radius: 20px;
   margin-bottom:30px;
 }
+
+.our-clinics-item > div{
+  width:510px;
+  height:150px;
+  margin:auto auto;
+}
+
 
 .HeadQuarter {
   font-family: "Lato-Black";
@@ -869,9 +902,6 @@ h2,p{
 .building-img {
   width:146px;
   height:150px;
-  margin:20px 10px;
-  background-image:url(../img/Rectangle1.png);
-  background-size:160px;
   border-radius: 20px;
 }
 
@@ -888,9 +918,8 @@ h2,p{
 }
 
 .our-clinics-information {
-  margin-top:20px;
-  margin-left:10px;
-  margin-right:20px;
+
+  margin-left:15px;
 }
 .our-clinics-information div {
   margin:10px 0px;
@@ -917,6 +946,8 @@ h2,p{
   justify-content: space-between; 
 }
 
+/* footer */
+
 footer {
 
   width:100%;
@@ -940,8 +971,11 @@ footer {
 }
 
 .footer-maintext {
-  margin:20px 0px;
-  line-height:25px;
+  width:270px;
+  height:54px;
+  font-size: 16px;
+  margin:25px 0px 30px;
+  line-height:24px;
 }
 
 .footer-menu div {
@@ -955,7 +989,7 @@ footer {
 
 .footer-menu div h3 {
   text-align: left;
-  line-height: 35px;
+  line-height: 40px;
 }
 
 .footer-SNS {
