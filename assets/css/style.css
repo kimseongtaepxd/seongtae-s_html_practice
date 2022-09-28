@@ -398,7 +398,7 @@ h2,p{
 
 .clinic-facilities-top {
   width:100%;
-  height:250px;
+  height:220px;
   padding-top:120px;
 }
 
@@ -407,17 +407,22 @@ h2,p{
 }
 
 .clinic-facilities-description {
-  width:100%;
-  padding:50px 0px;
+  width:95%;
+  padding-top:50px;
   font-size:24px;
 }
 
-.SEE-ALL > a {
+.SEE-ALL {
   font-size:28px;
   font-family: 'Lato-Bold';
   color:#055a9d;
-  margin-right:15px;
   }
+
+.see-all-arrow {
+  stroke-width:3px; 
+  stroke:#00579b;
+  margin-left:10px;
+}
 
 .clinic-facilities-bottom {
   display: flex;
@@ -456,6 +461,11 @@ h2,p{
 
 .left-arrow {
   transform: scaleX(-1);
+}
+
+.left-arrow, .right-arrow {
+  stroke-width:3px; 
+  stroke:#00579b;
 }
 
 .clinic-facilities-item {
@@ -915,6 +925,7 @@ h2,p{
   font-family: "Lato-Bold";
   font-size: 12px;
   line-height:37px;
+  background-color: #fff;
 }
 
 .our-clinics-information {
