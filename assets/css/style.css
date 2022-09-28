@@ -55,13 +55,13 @@ html,body{
 }
 
 body {
-  background-image:url(../img/Illustration.png);
+  background-image:url(../img/body_bg.png);
   background-repeat: no-repeat;
   background-position:right top;
 }
 
 body > div {
-  background-image : url(../img/Deco.png);
+  background-image : url(../img/body_div_bg.png);
   background-repeat: no-repeat;
   background-position: left bottom;
 }
@@ -234,7 +234,7 @@ header > h1 > a > span {
 }
 
 .line {
-  content:url(../img/Line.png);
+  content:url(../img/line.png);
 }
 
 .gear {
@@ -432,7 +432,7 @@ h2,p{
 .clinic-facilities-bg {
   width:430px;
   height:365px;
-  background-image : url(../img/Clinic_Facilities_bg.png);
+  background-image : url(../img/clinic_facilities_bg.png);
   background-size : 85%;
   background-repeat: no-repeat;
 }
@@ -443,7 +443,7 @@ h2,p{
   height:1200px;
   top:-190px;
   left:-420px;
-  background-image : url(../img/Clinic_Facilities_Circle.PNG);
+  background-image : url(../img/clinic_facilities_circle.png);
   background-repeat: no-repeat;
   z-index:-1;
 }
@@ -576,7 +576,7 @@ h2,p{
 .our-speciality-bg {
   width:579px;
   height:607px;
-  background-image:url(../img/Illustration\ &\ Title.png);
+  background-image:url(../img/our_speciality_bg.png);
 }
 
 /* ask doctosth */
@@ -789,7 +789,7 @@ h2,p{
 .People-testimonials-bg {
   width:350px;
   height:350px;
-  background-image: url(../img/People_Testimonials_bg.png);
+  background-image: url(../img/people_testimonials_bg.png);
   background-size:100%;
   background-repeat: no-repeat;
 }
@@ -800,7 +800,7 @@ h2,p{
   height:1200px;
   right:-500px;
   top:-150px;
-  background-image : url(../img/Clinic_Facilities_Circle.PNG);
+  background-image : url(../img/clinic_facilities_circle.PNG);
   background-size:80%;
   background-repeat: no-repeat;
   z-index:-1;
