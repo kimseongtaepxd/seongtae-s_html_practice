@@ -111,7 +111,7 @@ header {
   margin:0px auto;
 }
 
-header >div{
+header > div{
   width:100%;
 }
 
@@ -119,8 +119,18 @@ header > h1 > a > span {
   display: none;
 }
 
+header > h1 {
+  margin:auto 33px;
+}
+
+header > a {
+  width:100%;
+  height:100%;
+}
+
 .Medical {
-  margin:22px 33px;
+  width:191px;
+  height:59px;
 }
 
 .Menu {
@@ -303,7 +313,11 @@ h2,p{
   border-radius: 50px;
   text-align: center;
   line-height:50px;
-  
+}
+
+.register-now > a {
+  padding: 11px 40px;
+  border-radius: 50px;
 }
 
 
@@ -418,19 +432,16 @@ h2,p{
   color:#055a9d;
   }
 
-.see-all-arrow {
-  stroke-width:3px; 
-  stroke:#00579b;
-  margin-left:10px;
+.SEE-ALL > a > svg {
+  margin-left : 10px;
 }
 
 .clinic-facilities-bottom {
-  display: flex;
   padding-bottom:60px;
 }
 
 .clinic-facilities-bg {
-  width:430px;
+  width:420px;
   height:365px;
   background-image : url(../img/clinic_facilities_bg.png);
   background-size : 85%;
@@ -463,16 +474,10 @@ h2,p{
   transform: scaleX(-1);
 }
 
-.left-arrow, .right-arrow {
-  stroke-width:3px; 
-  stroke:#00579b;
-}
-
 .clinic-facilities-item {
   position: relative;
   width:260px;
   height:390px;
-  margin-right:40px;
   box-shadow: 0 17px 80px -60px rgba(0, 0, 0, 1);
   background-color: #fff;
   border-radius: 15px;
@@ -928,6 +933,11 @@ h2,p{
   background-color: #fff;
 }
 
+.our-clinics-btn > a {
+  padding: 13px 140px;
+  border-radius: 30px;
+}
+
 .our-clinics-information {
 
   margin-left:15px;
@@ -947,8 +957,7 @@ h2,p{
 }
 
 .our-clinics-pin-ico{
-  width:16px;
-  height:20px;
+
   margin-right:10px
 }
 
