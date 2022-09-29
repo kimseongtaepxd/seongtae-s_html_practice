@@ -55,13 +55,13 @@ html,body{
 }
 
 body {
-  background-image:url(../img/body_bg.png);
+  background-image:url(../img/bg_body.png);
   background-repeat: no-repeat;
   background-position:right top;
 }
 
 body > div {
-  background-image : url(../img/body_div_bg.png);
+  background-image : url(../img/bg_body_div.png);
   background-repeat: no-repeat;
   background-position: left bottom;
 }
@@ -96,7 +96,7 @@ body {
   font-family : 'Lato-Regular';
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family : 'Lato-Bold';
 }
 
@@ -226,6 +226,7 @@ header > a {
 /* header */
 
 #LOGIN {
+  font-family:"Lato-Bold";
   font-size: 16px;
   line-height: 40px;
   margin:0px 8px;
@@ -236,7 +237,7 @@ header > a {
   color:#fff;
   background-color: #4caf50;
   border-radius: 50px;
-  font-family: "Lato-Black";
+  font-family: "Lato-Bold";
   font-size:16px;
   text-align: center;
   line-height: 40px;
@@ -244,7 +245,7 @@ header > a {
 }
 
 .line {
-  content:url(../img/line.png);
+  content:url(../img/img_line.png);
 }
 
 .gear {
@@ -443,7 +444,7 @@ h2,p{
 .clinic-facilities-bg {
   width:420px;
   height:365px;
-  background-image : url(../img/clinic_facilities_bg.png);
+  background-image : url(../img/bg_clinic_facilities.png);
   background-size : 85%;
   background-repeat: no-repeat;
 }
@@ -454,7 +455,7 @@ h2,p{
   height:1200px;
   top:-190px;
   left:-420px;
-  background-image : url(../img/clinic_facilities_circle.png);
+  background-image : url(../img/bg_clinic_facilities_circle.png);
   background-repeat: no-repeat;
   z-index:-1;
 }
@@ -492,15 +493,15 @@ h2,p{
 }
 
 #clinic-facilities-item-img-1{
-  background-image:url(../img/clinic_img_1.png);
+  background-image:url(../img/img_clinic_1.png);
 }
 
 #clinic-facilities-item-img-2{
-  background-image:url(../img/clinic_img_2.png);
+  background-image:url(../img/img_clinic_2.png);
 }
 
 #clinic-facilities-item-img-3{
-  background-image:url(../img/clinic_img_3.png);
+  background-image:url(../img/img_clinic_3.png);
 }
 
 .clinic-facilities-text-box {
@@ -511,6 +512,7 @@ h2,p{
 
 .clinic-facilities-item-title {
   margin:20px 0px;
+  font-family: "Lato-Bold";
   font-size:24px;
 }
 
@@ -581,7 +583,7 @@ h2,p{
 .our-speciality-bg {
   width:579px;
   height:607px;
-  background-image:url(../img/our_speciality_bg.png);
+  background-image:url(../img/bg_our_speciality.png);
 }
 
 /* ask doctosth */
@@ -590,7 +592,7 @@ h2,p{
   max-width:1324px;
   height:649px;
   margin:130px auto;
-  background-image:url(../img/ask_doctos_bg.png);
+  background-image:url(../img/bg_ask_doctos.png);
   background-repeat: no-repeat;
   background-position: right bottom;
 }
@@ -658,12 +660,14 @@ h2,p{
 }
 
 .Name {
+  font-family:"Lato-Regular";
   font-size:24px;
   padding:10px 0px;
 }
 
 .Job {
-  font-size:20px;
+  font-family:"Lato-Regular";
+  font-size:18px;
   color:#929292;
 }
 
@@ -776,6 +780,7 @@ h2,p{
 }
 
 .People-testimonials-name {
+  font-family: "Lato-Bold";
   font-size:20px;
 }
 .People-testimonials-job {
@@ -794,7 +799,7 @@ h2,p{
 .People-testimonials-bg {
   width:350px;
   height:350px;
-  background-image: url(../img/people_testimonials_bg.png);
+  background-image: url(../img/bg_people_testimonials.png);
   background-size:100%;
   background-repeat: no-repeat;
 }
@@ -805,7 +810,7 @@ h2,p{
   height:1200px;
   right:-500px;
   top:-150px;
-  background-image : url(../img/clinic_facilities_circle.png);
+  background-image : url(../img/bg_clinic_facilities_circle.png);
   background-size:80%;
   background-repeat: no-repeat;
   z-index:-1;
@@ -950,14 +955,18 @@ h2,p{
   width:310px;
 }
 
+.call-and-location > div {
+  align-items: center;
+}
 .our-clinics-ico {
-  width:16px;
-  height:16px;
+  width:12px;
+  height:12px;
   margin-right:10px;
 }
 
 .our-clinics-pin-ico{
-
+  width:12px;
+  height:16px;
   margin-right:10px
 }
 
@@ -977,7 +986,8 @@ footer {
   padding-bottom:100px;
 }
 
-.footer-box h2 {
+.footer-box h3 {
+  font-family: "Lato-Black";
   text-align: left;
   line-height: 35px;
   font-size : 18px;
@@ -998,16 +1008,13 @@ footer {
   line-height:24px;
 }
 
-.footer-menu div {
+.footer-menu > div {
   width: 208px;
   height: 185px;
+  line-height: 40px;
 }
 
-.footer-menu > div > h2 {
-  font-family: "Lato-Black";
-}
-
-.footer-menu div h3 {
+.footer-menu > div > div {
   text-align: left;
   line-height: 40px;
 }
